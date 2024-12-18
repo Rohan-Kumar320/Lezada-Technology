@@ -6,7 +6,7 @@ const Fun = () => {
     useEffect(() => {
         AOS.init({
             duration: 1000, // Animation duration in milliseconds
-            offset: 120,    // Offset (in px) from the original trigger point
+            offset: 200,    // Offset (in px) from the original trigger point
             easing: 'ease-in-out', // Easing function for the animation
             once: false,
         });
@@ -20,10 +20,25 @@ const Fun = () => {
       // Cleanup event listener on unmount
       return () => window.removeEventListener("scroll", handleScroll);
     },[]);
+
   return (
     <>
-    <div data-aos="fade-right" className='m-4 mb-24'>
-        <img src="./front-1.jpg" alt="" width={800}/>
+    <div data-aos="fade-right" className=' m-4 mb-24 overflow-hidden bg-slate-50 md:flex justify-evenly items-center md:space-x-16'>
+      <div className='text-center font-mono md:text-start overflow-hidden'>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl'><span className='font-bold'>07+</span> shop</h1>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl'>laptop design's</h1>
+        <button className='mb-3 mt-3 border-b-2 border-black hover:animate-pulse'>View More</button>
+      </div>
+      <img src="./front-5.jpg" alt="" className=' md:max-w-[60%]'/>
+    </div>
+
+    <div data-aos="fade-left" className='m-4 mb-24 relative overflow-hidden bg-slate-50 md:flex justify-evenly items-center md:space-x-16'>
+      <img src="./front-2.jpg" alt="" className=' md:max-w-[60%] '/>
+      <div className='text-center font-mono md:text-start'>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl'><span className='font-bold'>Best 3D</span> shop</h1>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl'>laptop design's</h1>
+        <button className='mb-3 mt-3 border-b-2 border-black hover:animate-pulse'>View More</button>
+      </div>
     </div>
     </>
   )
