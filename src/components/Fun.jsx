@@ -33,7 +33,7 @@ const Fun = () => {
     </div>
 
     <div data-aos="fade-right" className='m-4 mb-24 overflow-hidden bg-slate-50 md:flex justify-evenly items-center md:space-x-16'>
-      <img src="./front-2.jpg" alt="" className=' md:max-w-[60%] '/>
+      <img src="./front-2.jpg" alt="" className=' md:max-w-[60%] overflow-hidden'/>
       <div className='text-center font-mono md:text-start'>
         <h1 className='text-2xl sm:text-3xl md:text-4xl'><span className='font-bold'>Best 3D</span> shop</h1>
         <h1 className='text-2xl sm:text-3xl md:text-4xl'>laptop design's</h1>
