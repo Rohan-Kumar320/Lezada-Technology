@@ -10,13 +10,13 @@ const Main = () => {
         <>
             <div className='bg-slate-200'>
                 <div>
-                    <p className='uppercase text-center pt-4 tracking-normal font-normal text-gray-700'>
+                    <p className='uppercase text-center pt-4 tracking-normal font-normal text-gray-700 font-roboto'>
                         Welcome to Lezada
                     </p>
-                    <p className='text-center text-2xl sm:text-4xl md:text-4xl font-medium font-sans pt-6 text-gray-700'>
+                    <p className='text-center text-2xl sm:text-4xl md:text-4xl font-medium font-roboto pt-6 text-gray-700'>
                         Minimal & Creative
                     </p>
-                    <p className='text-center text-xl sm:text-3xl md:text-4xl font-light font-sans pt-4 text-gray-700'>
+                    <p className='text-center text-xl sm:text-3xl md:text-4xl font-light pt-4 text-gray-700 font-italianno'>
                         React Js Multipurpose eCommerce Clone
                     </p>
                     <div className='mt-6 overflow-hidden '>

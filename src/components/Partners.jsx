@@ -36,12 +36,12 @@ const Partners = () => {
 
   return (
     <>
-      <div className='text-center text-3xl mt-4 font-mono underline'>
+      <div className='text-center text-3xl mt-6 font-mono underline'>
         <h2>Our Partner's</h2>
       </div>
       <div className='grid grid-cols-2 md:grid-cols-6 mx-8 my-9 gap-4'>
         {image.map((imgg, index) => (
-          <div key={index} className={`flex justify-center items-center mt-${imgg.mtop}`}>
+          <div key={index} className={`flex justify-center items-center translate-x-5 mt-${imgg.mtop}`}>
             <img src={imgg.img} alt={`Partner ${index + 1}`} className={imgg.wid} />
           </div>
         ))}

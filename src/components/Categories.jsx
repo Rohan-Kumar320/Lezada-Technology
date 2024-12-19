@@ -19,6 +19,22 @@ const Categories = () => {
             image: "./front-4.jpg",
             title : "Affordable Laptop"
         },
+        {
+            image: "./front-1.jpg",
+            title : "Laptop"
+        },
+        {
+            image: "./front-2.jpg",
+            title : "Gaming Laptop"
+        },
+        {
+            image: "./front-3.jpg",
+            title : "Simple Laptop"
+        },
+        {
+            image: "./front-4.jpg",
+            title : "Affordable Laptop"
+        },
     ]
 
 
@@ -26,8 +42,8 @@ const Categories = () => {
     <>
         
             <div>
-                <p className='font-semibold text-center text-2xl sm:text-3xl md:text-4xl pt-3'>15+ Homepages</p>
-                <p className=' text-lg md:text-xl text-center pt-3'>Lezada React template is an apparently simple but highly functional template designed for creating a flourishing online business.</p>
+                <p className='font-semibold text-center text-2xl sm:text-3xl md:text-4xl pt-3 font-roboto'>15+ Homepages</p>
+                <p className=' text-lg md:text-xl text-center pt-3 font-roboto'>Lezada React template is an apparently simple but highly functional template designed for creating a flourishing online business.</p>
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-2 sm:space-x-2 md:grid-cols-4 md:space-x-4 m-4 border-solid border-black mb-4'>
                 {items.map((item,index)=>(
