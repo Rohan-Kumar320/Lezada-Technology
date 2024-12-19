@@ -5,6 +5,7 @@ import Categories from '../components/Categories'
 import Fun from '../components/Fun'
 import Preloader from '../components/Preloader'
 import Partners from '../components/Partners'
+import Footer from '../components/Footer'
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -13,7 +14,7 @@ const Home = () => {
     // Simulate data fetching or some async operation
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // Hides preloader after 2 seconds
+    }, 3000); // Hides preloader after 2 seconds
 
     return () => clearTimeout(timer);
   }, []);
@@ -29,6 +30,7 @@ const Home = () => {
         <Categories/>
         <Fun/>
         <Partners/>
+        <Footer/>
       </div>
       )}
     </>
