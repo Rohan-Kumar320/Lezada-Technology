@@ -4,7 +4,7 @@ const Partners = () => {
   const image = [
     {
       img: './partner-1.png',
-      wid: 'w-44', // Set width as a fixed Tailwind class
+      wid: 'w-44',
       mtop: 4,
     },
     {
@@ -41,7 +41,7 @@ const Partners = () => {
       </div>
       <div className='grid grid-cols-2 md:grid-cols-6 mx-8 my-9 gap-4'>
         {image.map((imgg, index) => (
-          <div key={index} className={`flex justify-center items-center translate-x-5 mt-${imgg.mtop}`}>
+          <div key={index} className={`flex justify-center items-center md:translate-x-5 mt-${imgg.mtop}`}>
             <img src={imgg.img} alt={`Partner ${index + 1}`} className={imgg.wid} />
           </div>
         ))}

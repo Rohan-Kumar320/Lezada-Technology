@@ -8,7 +8,7 @@ const Main = () => {
     
     return (
         <>
-            <div className='bg-slate-200'>
+            <div id='home' className='bg-slate-200'>
                 <div>
                     <p className='uppercase text-center pt-4 tracking-normal font-normal text-gray-700 font-roboto'>
                         Welcome to Lezada

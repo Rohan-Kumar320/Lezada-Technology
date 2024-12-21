@@ -6,6 +6,7 @@ import Fun from '../components/Fun'
 import Preloader from '../components/Preloader'
 import Partners from '../components/Partners'
 import Footer from '../components/Footer'
+import TextFun from '../components/TextFun'
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,7 +33,7 @@ const Home = () => {
         <Partners/>
         <Footer/>
       </div>
-      )}
+      )} 
     </>
   )
 }

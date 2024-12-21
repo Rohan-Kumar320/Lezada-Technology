@@ -23,7 +23,7 @@ const Fun = () => {
 
   return (
     <>
-    <div data-aos="fade-right" className=' m-4 bg-slate-50 md:flex justify-evenly items-center md:space-x-16'>
+    <div id='cards' data-aos="fade-right" className=' m-4 bg-slate-50 md:flex justify-evenly items-center md:space-x-16'>
       <div className='text-center font-mono md:text-start'>
         <h1 className='text-2xl sm:text-3xl md:text-4xl'><span className='font-bold'>07+</span> shop</h1>
         <h1 className='text-2xl sm:text-3xl md:text-4xl'>laptop design's</h1>
