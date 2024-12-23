@@ -1,4 +1,4 @@
-import gsap from "gsap-trial";
+import gsap from "gsap";
 import React, { useEffect } from "react";
 import SplitType from "split-type";
 
@@ -30,7 +30,7 @@ const Preloader = ({isVisible}) => {
     }`}
     >      
     <div>
-        <p className="preload font-thin text-xl md:text-2xl overflow-hidden border border-b-2 border-t-0 border-l-0 border-r-0 border-black border-opacity-75 font-roboto">Welcome To Lezada Technology</p>
+        <p className="preload font-normal text-xl md:text-2xl overflow-hidden border border-b-2 border-t-0 border-l-0 border-r-0 border-black border-opacity-75 font-roboto">Welcome To Lezada Technology</p>
         <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-black ml-[40%] mt-10"></div>
     </div>
     </div>

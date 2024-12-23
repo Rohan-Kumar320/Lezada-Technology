@@ -36,7 +36,7 @@ const Partners = () => {
 
   return (
     <>
-      <div className='text-center text-xl md:text-3xl mt-6 font-mono underline'>
+      <div className='text-center text-xl md:text-3xl mt-6 font-roboto underline'>
         <h2>Our Partner's</h2>
       </div>
       <div className='grid grid-cols-2 md:grid-cols-6 mx-8 my-9 gap-4'>

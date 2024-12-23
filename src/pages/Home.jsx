@@ -2,11 +2,10 @@ import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import Main from '../components/Main'
 import Categories from '../components/Categories'
-import Fun from '../components/Fun'
 import Preloader from '../components/Preloader'
 import Partners from '../components/Partners'
 import Footer from '../components/Footer'
-import TextFun from '../components/TextFun'
+import ViewMoreProds from '../components/ViewMoreProds'
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,7 +28,7 @@ const Home = () => {
         <Navbar/>
         <Main/>
         <Categories/>
-        <Fun/>
+        <ViewMoreProds trigger={!isLoading}/>
         <Partners/>
         <Footer/>
       </div>

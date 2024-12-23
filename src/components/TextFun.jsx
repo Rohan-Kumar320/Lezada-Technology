@@ -36,6 +36,13 @@ const TextFun = ({ TriggerAnimation }) => {
         repeat: -1,
         duration: 1,
         ease: 'power1.inOut',
+        scrollTrigger: {
+          trigger: '.imgani',
+          start: 'top 80%',
+          end: 'bottom 80%',
+          scrub: true,
+          markers: true
+        }
       });
 
       // Cleanup when component is unmounted
@@ -53,6 +60,7 @@ const TextFun = ({ TriggerAnimation }) => {
           <div className="imgani">
             {/* Wait for image to load before running animation */}
             <img
+              className='hover:-translate-x-2 hover:-translate-y-2 duration-500'
               src="./partner-1.jpg"
               alt=""
               width={150}

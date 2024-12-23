@@ -52,7 +52,7 @@ const Categories = () => {
                     <div className='absolute h-full w-full bg-black/40 flex justify-center items-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-700'>
                         <button className='text-white border-2 rounded-sm py-2 px-2'>View More</button>
                     </div>
-                    <p className='uppercase text-center pt-2 text-lg font-mono'>{item.title}</p>
+                    <p className='uppercase text-center pt-2 text-lg font-roboto'>{item.title}</p>
                 </div>
                 ))}
             </div>
