@@ -28,7 +28,13 @@ return (
                         <Link  to="categories"  // Target the section with id="home"
                             smooth={true}
                             duration={500}  // Duration of the scroll in ms
-                            className="cursor-pointer hover:text-slate-300">Support</Link>
+                            className="cursor-pointer hover:text-slate-300">Categories</Link>
+                        </li>
+                    <li className='hover:border-b-4 font-roboto'> 
+                        <Link  to="viewMore"  // Target the section with id="home"
+                            smooth={true}
+                            duration={500}  // Duration of the scroll in ms
+                            className="cursor-pointer hover:text-slate-300">More</Link>
                         </li>
                     <li className='hover:border-b-4 flex gap-x-1 font-roboto group'> 
                         <Link
@@ -63,7 +69,13 @@ return (
                     <Link  to="categories"  // Target the section with id="home"
                             smooth={true}
                             duration={500}  // Duration of the scroll in ms
-                            className="cursor-pointer hover:text-slate-300">Support</Link>
+                            className="cursor-pointer hover:text-slate-300">Categories</Link>
+                        </li>
+                    <li className='hover:border-b-2  border-black font-roboto'>
+                    <Link  to="viewMore"  // Target the section with id="home"
+                            smooth={true}
+                            duration={500}  // Duration of the scroll in ms
+                            className="cursor-pointer hover:text-slate-300">More</Link>
                         </li>
                     <li className='hover:border-b-2  border-black flex justify-center font-roboto'>
                     <Link
