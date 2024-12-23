@@ -24,7 +24,6 @@ const ViewMoreProds = ({trigger}) => {
                 scrollTrigger: {
                     trigger: '.parentani',
                     start: 'top 80%',
-                    markers: true
                 }
             })
 
@@ -92,7 +91,7 @@ const ViewMoreProds = ({trigger}) => {
                         <p className='textani pt-2 w-42 md:w-60 font-normal md:text-sm text-xs md:text-start text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laudantium assumenda molestiae quisquam doloremque architecto.</p>
                         <button className='textani mb-3 mt-3 border-b-2 border-black hover:animate-pulse active:text-blue-500'>View More</button>
                     </div>
-                    <div className='imgani max-w-[50%]'>
+                    <div className='imgani max-w-[50%] md:max-w-[32%]'>
                             <img 
                             src="./vector.png" 
                             alt="" 
