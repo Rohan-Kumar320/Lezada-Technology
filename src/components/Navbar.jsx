@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { IoIosMenu } from "react-icons/io";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { IoCartOutline } from "react-icons/io5";
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
     const [open,setopen] = useState(false);
@@ -19,29 +19,29 @@ return (
             <div className='hidden md:flex mr-6 space-x-8'>
                 <ul className='flex text-center space-x-6 pt-3'>
                     <li className='hover:border-b-4 font-roboto'> 
-                        <Link  to="home"  // Target the section with id="home"
+                        <ScrollLink  to="home"  // Target the section with id="home"
                             smooth={true}
                             duration={500}  // Duration of the scroll in ms
-                            className="cursor-pointer hover:text-slate-300">Home</Link>
+                            className="cursor-pointer hover:text-slate-300">Home</ScrollLink>
                     </li>
                     <li className='hover:border-b-4 font-roboto'> 
-                        <Link  to="categories"  // Target the section with id="home"
+                        <ScrollLink  to="categories"  // Target the section with id="home"
                             smooth={true}
                             duration={500}  // Duration of the scroll in ms
-                            className="cursor-pointer hover:text-slate-300">Categories</Link>
+                            className="cursor-pointer hover:text-slate-300">Categories</ScrollLink>
                         </li>
                     <li className='hover:border-b-4 font-roboto'> 
-                        <Link  to="viewMore"  // Target the section with id="home"
+                        <ScrollLink  to="viewMore"  // Target the section with id="home"
                             smooth={true}
                             duration={500}  // Duration of the scroll in ms
-                            className="cursor-pointer hover:text-slate-300">More</Link>
+                            className="cursor-pointer hover:text-slate-300">More</ScrollLink>
                         </li>
                     <li className='hover:border-b-4 flex gap-x-1 font-roboto group'> 
-                        <Link
+                        <ScrollLink
                             to="cards"  // Target the section with id="home"
                             smooth={true}
                             duration={500}  // Duration of the scroll in ms
-                            className="cursor-pointer group-hover:text-slate-300">Cart Items </Link><IoCartOutline size={26} className='group-hover:text-slate-300'/>
+                            className="cursor-pointer group-hover:text-slate-300"></ScrollLink><IoCartOutline size={26} className='group-hover:text-slate-300'/>
                         </li>
                 </ul>
                     <button className='uppercase bg-black text-white tracking-normal rounded-sm py-3 px-4 font-roboto active:scale-[98%]'>Purchase Lazeda $24</button>
@@ -60,29 +60,29 @@ return (
                 <div className='absolute top-16 left-0 w-full bg-slate-400 border-t-2 border-black tracking-wide'>
                 <ul className='text-center p-4 text-xl space-y-3 '>
                     <li className='hover:border-b-2 border-black font-roboto'>
-                        <Link  to="home"  // Target the section with id="home"
+                        <ScrollLink  to="home"  // Target the section with id="home"
                             smooth={true}
                             duration={500}  // Duration of the scroll in ms
-                            className="cursor-pointer hover:text-slate-300">Home</Link>
+                            className="cursor-pointer hover:text-slate-300">Home</ScrollLink>
                         </li>
                     <li className='hover:border-b-2  border-black font-roboto'>
-                    <Link  to="categories"  // Target the section with id="home"
+                    <ScrollLink  to="categories"  // Target the section with id="home"
                             smooth={true}
                             duration={500}  // Duration of the scroll in ms
-                            className="cursor-pointer hover:text-slate-300">Categories</Link>
+                            className="cursor-pointer hover:text-slate-300">Categories</ScrollLink>
                         </li>
                     <li className='hover:border-b-2  border-black font-roboto'>
-                    <Link  to="viewMore"  // Target the section with id="home"
+                    <ScrollLink  to="viewMore"  // Target the section with id="home"
                             smooth={true}
                             duration={500}  // Duration of the scroll in ms
-                            className="cursor-pointer hover:text-slate-300">More</Link>
+                            className="cursor-pointer hover:text-slate-300">More</ScrollLink>
                         </li>
                     <li className='hover:border-b-2  border-black flex justify-center font-roboto'>
-                    <Link
+                    <ScrollLink
                             to="cards"  // Target the section with id="home"
                             smooth={true}
                             duration={500}  // Duration of the scroll in ms
-                            className="cursor-pointer hover:text-slate-300">Cart Items </Link><IoCartOutline size={26} className='hover:text-slate-300'/>
+                            className="cursor-pointer hover:text-slate-300">Cart Items </ScrollLink><IoCartOutline size={26} className='hover:text-slate-300'/>
                     </li>
                 </ul>
             </div>

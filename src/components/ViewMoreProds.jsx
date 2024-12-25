@@ -1,6 +1,7 @@
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router';
 import SplitType from 'split-type';
 
 gsap.registerPlugin(ScrollTrigger)

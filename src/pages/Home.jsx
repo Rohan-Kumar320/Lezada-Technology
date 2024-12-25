@@ -6,6 +6,7 @@ import Preloader from '../components/Preloader'
 import Partners from '../components/Partners'
 import Footer from '../components/Footer'
 import ViewMoreProds from '../components/ViewMoreProds'
+import CategoriesDetail from './CategoriesDetail'
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -31,8 +32,9 @@ const Home = () => {
         <ViewMoreProds trigger={!isLoading}/>
         <Partners/>
         <Footer/>
-      </div>
+      </div>    
       )} 
+      
     </>
   )
 }
