@@ -131,8 +131,8 @@ const ViewMoreProds = ({trigger}) => {
       
 
         return () => {
-        // Kill all animations and refresh
-        [...parentAnimations, ...textAnimations, ...imgAnimations].forEach((ani) => ani.kill());
+       // Cleanup animations and refresh ScrollTrigger
+        ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
         ScrollTrigger.refresh();
         };
         }
@@ -150,7 +150,7 @@ const ViewMoreProds = ({trigger}) => {
                         <h1 className='textani text-lg sm:text-3xl md:text-4xl'><span className='font-bold'>07+</span> Shop</h1>
                         <h1 className='textani text-lg sm:text-3xl md:text-4xl'>laptop design's</h1>
                         <p className='textani pt-2 w-43 md:w-60 font-normal md:text-sm text-xs md:text-start text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laudantium assumenda molestiae quisquam doloremque architecto.</p>
-                        <button className='textani mb-3 mt-3 border-b-2 border-black hover:animate-pulse active:text-blue-500'>View More</button>
+                        <button className='textani mb-3 mt-3 border-b-2 border-black hover:animate-pulse active:text-blue-500'><Link to="/abc">View More</Link></button>
                     </div>
                     <div className='imgani max-w-[50%] md:max-w-[32%]'>
                             <img 

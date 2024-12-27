@@ -8,30 +8,25 @@ const Categories = () => {
             ccid: 1,
             image: "./front-1.jpg",
             title : "Laptop",
-            link: "/this"
 
         },
         {
             ccid: 2,
             image: "./front-2.jpg",
             title : "Gaming Laptop",
-            link: "/this"
         },
         {
             ccid: 3,
             image: "./front-3.jpg",
             title : "Simple Laptop",
-            link: "/this"
         },
         {
             ccid: 4,
             image: "./front-4.jpg",
             title : "Affordable Laptop",
-            link: "/this"
         },
         
     ]
-
 
   return (
     <>
@@ -46,7 +41,7 @@ const Categories = () => {
                     <img src={item.image} alt="" className='h-48 w-full'/>
                     <div className='absolute h-full w-full bg-black/40 flex justify-center items-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-700'>
                         <button className='text-white border-2 rounded-sm py-2 px-2'>
-                            <Link to={`/categories/${item.ccid}`}>View More</Link>
+                            <Link to={`/categories/${item.title}/${item.ccid}`}>View More</Link>
                         </button>
                     </div>
                     <p className='uppercase text-center pt-2 text-lg font-roboto'>{item.title}</p>
