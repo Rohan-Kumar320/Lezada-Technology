@@ -14,15 +14,15 @@ const Footer = () => {
                         <p className='text-center pt-3 md:text-start container text-xs md:pt-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium a beatae quia officiis eveniet dicta ipsam. Deserunt nobis ullam libero maiores necessitatibus aliquam enim hic.</p>
                     </div>
                     <div className='text-xs'>
-                        <h1 className='pt-3 md:pt-0 pb-3 text-center md:text-start text-lg font-semibold font-roboto'>Office</h1>
-                        <p>Aptech Computer Learning</p>
+                        <h1 className='pt-3 md:pt-0 pb-2.5 text-center md:text-start text-lg font-semibold font-roboto'>Office</h1>
+                        <p className='pt-2'>Aptech Computer Learning</p>
                         <p>Sharah e Faisal Road,</p>
                         <p>Karachi, Pakistan</p>
                         <p className='font-semibold underline pt-3'>aptechlearning@gmail.com</p>
                         <p className='text-center md:text-start font-semibold pt-3'>+92-3657485749</p>
                     </div>
                     <div className='text-xs'>
-                        <h1 className='pt-3 md:pt-0 pb-2.5 text-center md:text-start text-lg font-semibold font-roboto'>Link's</h1>
+                        <h1 className='pt-3 md:pt-0 pb-3 text-center md:text-start text-lg font-semibold font-roboto'>Link's</h1>
                         <ul className='leading-6'>
                             <li>Home</li>
                             <li>Service's</li>

@@ -3,6 +3,7 @@ import { IoIosMenu } from "react-icons/io";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { IoCartOutline } from "react-icons/io5";
 import { Link as ScrollLink } from 'react-scroll';
+import Navlink from '../utility/Navlink';
 
 const Navbar = () => {
     const [open,setopen] = useState(false);
@@ -19,10 +20,11 @@ return (
             <div className='hidden md:flex mr-6 space-x-8'>
                 <ul className='flex text-center space-x-6 pt-3'>
                     <li className='hover:border-b-4 font-roboto'> 
-                        <ScrollLink  to="home"  // Target the section with id="home"
+                        {/* <ScrollLink  to="home"  // Target the section with id="home"
                             smooth={true}
                             duration={500}  // Duration of the scroll in ms
-                            className="cursor-pointer hover:text-slate-300">Home</ScrollLink>
+                            className="cursor-pointer hover:text-slate-300">Home</ScrollLink> */}
+                            <Navlink to='/' scrollTo='home' label='Home'/>
                     </li>
                     <li className='hover:border-b-4 font-roboto'> 
                         <ScrollLink  to="categories"  // Target the section with id="home"
@@ -48,7 +50,7 @@ return (
             </div>
             
             <div className='flex md:hidden'>
-            <button className='block md:hidden mr-2 md:mr-4 uppercase bg-black text-white tracking-normal text-xs sm:text-sm rounded-sm py-2 px-3 font-roboto active:scale-[98%]'>Purchase Lazeda $24</button>
+            {/* <button className='block md:hidden mr-2 md:mr-4 uppercase bg-black text-white tracking-normal text-xs sm:text-sm rounded-sm py-2 px-3 font-roboto active:scale-[98%]'>Purchase Lazeda $24</button> */}
                 {!open ? 
                     <button className='block md:hidden mr-4' onClick={openMenu}><IoIosMenu size={25}/></button>
                     :

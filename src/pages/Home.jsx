@@ -26,12 +26,10 @@ const Home = () => {
     <Preloader isVisible={isLoading}/>
     {!isLoading && (
       <div>
-        <Navbar/>
         <Main/>
         <Categories/>
         <ViewMoreProds trigger={!isLoading}/>
         <Partners/>
-        <Footer/>
       </div>    
       )} 
       

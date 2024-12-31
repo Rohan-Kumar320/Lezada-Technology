@@ -3,52 +3,13 @@ import { IoCartOutline } from "react-icons/io5";
 import { FaHeart } from "react-icons/fa";
 import { GoLaw } from "react-icons/go";
 import { Link, Outlet, useParams } from 'react-router';
+import products from '../utility/ProductsData';
 
 const CategoriesDetail = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0); 
   }, []);
-  
-
-  const products = [
-    {
-      prodID: 1,
-      cateid: 1,
-      prodName: "Product 1",
-      prodOldPrice: 149.99,
-      prodNewPrice: 129.99,
-      prodDesc: "This is product 1",
-      prodImg: '/laptop-1.png'
-    },
-    {
-      prodID: 2,
-      cateid: 1,
-      prodName: "Product 2",
-      prodOldPrice: 179.99,
-      prodNewPrice: 149.99,      
-      prodDesc: "This is product 2",
-      prodImg: '/laptop-1.png'
-    },
-    {
-      prodID: 3,
-      cateid:2,
-      prodName: "Product 3",
-      prodOldPrice: 199.99,
-      prodNewPrice: 179.99,      
-      prodDesc: "This is product 3",
-      prodImg: '/laptop-1.png'
-    },
-    {
-      prodID: 4,
-      cateid: 2,
-      prodName: "Product 4",
-      prodOldPrice: 229.99,
-      prodNewPrice: 199.99,      
-      prodDesc: "This is product 4",
-      prodImg: '/laptop-1.png'
-    },
-  ]
 
   const [likedProducts, setLikedProducts] = useState(
     products.reduce((acc, product) => {
@@ -56,8 +17,6 @@ const CategoriesDetail = () => {
       return acc;
     }, {})
   );
-
-
 
   const toggleLike = (prodID) => {
     setLikedProducts((prevState) => ({
@@ -73,14 +32,8 @@ const CategoriesDetail = () => {
   return (
     <>
     <div>
-    <div className='w-[20%] h-screen bg-slate-200 rounded-tr-2xl shadow-md border border-gray-300 fixed'>
-      <div>
-      <Outlet/>
-      <h1 className='text-center font-medium font-roboto text-2xl pt-5 text-slate-500'>Budget Laptop's</h1>
-      </div>
-    </div>
-      <div className='card-container flex justify-center ml-44 '>
-        <div className='grid grid-cols-3'>  
+      <div className='card-container'>
+        <div className='grid grid-cols-4'>  
           {filterData.length > 0 ? (
           filterData.map((prod,index) => (
           <div key={index} className='w-52 max-h-full m-4 ml-16 border rounded-xl border-gray-300 shadow-lg overflow-hidden'>
