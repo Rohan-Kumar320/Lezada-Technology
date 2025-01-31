@@ -32,11 +32,14 @@ const CategoriesDetail = () => {
   return (
     <>
     <div>
+      <div>
+        <h1 className='text-center font-semibold text-2xl m-4'>Showing Products: {categoryName}</h1>
+      </div>
       <div className='card-container'>
-        <div className='grid grid-cols-4'>  
+        <div className='grid grid-cols-2 md:grid-cols-4'>  
           {filterData.length > 0 ? (
           filterData.map((prod,index) => (
-          <div key={index} className='w-52 max-h-full m-4 ml-16 border rounded-xl border-gray-300 shadow-lg overflow-hidden'>
+          <div key={index} className='w-44 md:w-52 md:max-h-full m-[6px] md:m-4 md:ml-16 border rounded-xl border-gray-300 shadow-lg overflow-hidden'>
             <div className='flex justify-end items-center'>
             <h1 className='absolute pb-40 pr-5 text-xs text-gray-400 z-20 '>ID: {prod.prodID}</h1>
               <button className='py-2 px-2 absolute bg-blue-100 mb-14 mr-4 font-bold rounded-full z-20'>
@@ -49,7 +52,7 @@ const CategoriesDetail = () => {
             </div>
             <div className='pl-4 pr-4 font-roboto text-sm pt-2'>
               <h1 className='font-medium'>
-                <Link to={`/categories/${categoryId}/${categoryName}/product/${prod.prodName}/${prod.prodID}`}>
+                <Link to={`/categories/${categoryName}/${categoryId}/product/${prod.prodName}/${prod.prodID}`}>
                   {prod.prodName}
                 </Link>
                 </h1>
@@ -57,7 +60,7 @@ const CategoriesDetail = () => {
                 <div className='flex justify-between items-center mt-5 mb-3'>
                   <div className='flex flex-col'>
                     <p className='text-gray-400 line-through'>${prod.prodOldPrice}</p>
-                    <p className='font-bold text-2xl'>${prod.prodNewPrice}</p>
+                    <p className='font-bold text-xl md:text-2xl'>${prod.prodNewPrice}</p>
                   </div>
                   <button className='bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 
                   px-3 rounded-lg'><IoCartOutline size={24}/></button>

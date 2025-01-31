@@ -3,3 +3,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slick-slide > div {
+    display: flex;
+    justify-content: center;
+  }
+  .slick-prev:before, .slick-next:before {
+    font-size: 30px !important;
+    color: grey !important;    
+  }
+  .slick-next{
+    right: -30px !important;
+  }
+  .slick-prev{
+    left: -35px !important;
+  }
+  
+  

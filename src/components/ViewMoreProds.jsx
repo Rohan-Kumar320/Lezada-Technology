@@ -137,7 +137,6 @@ const ViewMoreProds = ({trigger}) => {
         };
         }
     }, [trigger, imgLoaded]);
-    
 
 
 
@@ -145,12 +144,12 @@ const ViewMoreProds = ({trigger}) => {
     return (
     <>
             <div id='viewMore' className='parentani max-w-full max-h-full bg-gray-300 mb-6 m-4'>
-                <div className='flex flex-col md:flex-row justify-evenly items-center mt-0 md:mt-10'>
-                    <div className='flex flex-col justify-center items-center md:items-start overflow-hidden'>
-                        <h1 className='textani text-lg sm:text-3xl md:text-4xl'><span className='font-bold'>07+</span> Shop</h1>
+                <div className='flex flex-row justify-evenly items-center mt-0 md:mt-10'>
+                    <div className='flex flex-col justify-center items-start overflow-hidden ml-2'>
+                        <h1 className='textani text-lg sm:text-3xl md:text-4xl mt-4'><span className='font-bold'>07+</span> Shop</h1>
                         <h1 className='textani text-lg sm:text-3xl md:text-4xl'>laptop design's</h1>
-                        <p className='textani pt-2 w-43 md:w-60 font-normal md:text-sm text-xs md:text-start text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laudantium assumenda molestiae quisquam doloremque architecto.</p>
-                        <button className='textani mb-3 mt-3 border-b-2 border-black hover:animate-pulse active:text-blue-500'><Link to="/abc">View More</Link></button>
+                        <p className='textani pt-2 w-40 md:w-60 font-normal md:text-sm text-xs text-start '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laudantium assumenda molestiae quisquam doloremque architecto.</p>
+                        <button className='textani mb-5 mt-3 border-b-2 border-black hover:animate-pulse active:text-blue-500'><Link to="/abc">View More</Link></button>
                     </div>
                     <div className='imgani max-w-[50%] md:max-w-[32%]'>
                             <img 
@@ -161,6 +160,8 @@ const ViewMoreProds = ({trigger}) => {
                     </div>
                 </div>
             </div>
+
+
             <div className='parentani2 max-w-full max-h-full bg-gray-300 mt-6 m-4'>
                 <div className='flex justify-evenly items-center'>
                     <div className='imgani2 max-w-[48%]'>
@@ -171,7 +172,7 @@ const ViewMoreProds = ({trigger}) => {
                             onLoad={handleImgLoad}/>
                     </div>
                     <div className='flex flex-col justify-center items-start overflow-hidden'>
-                        <h1 className='textani2 text-lg sm:text-3xl md:text-4xl'><span className='font-bold'>Best</span> Gaming</h1>
+                        <h1 className='textani2 text-lg sm:text-3xl md:text-4xl mt-4'><span className='font-bold'>Best</span> Gaming</h1>
                         <h1 className='textani2 text-lg sm:text-3xl md:text-4xl'>laptop design's</h1>
                         <p className='textani2 pt-2 w-40 md:w-60 font-normal md:text-sm text-xs text-start'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laudantium assumenda molestiae quisquam doloremque architecto.</p>
                         <button className='textani2 mb-5 mt-3 border-b-2 border-black hover:animate-pulse active:text-blue-500'>View More</button>
